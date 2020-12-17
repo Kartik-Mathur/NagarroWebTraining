@@ -12,6 +12,6 @@ window.onload = ()=>{
             // li.innerText = i
             // list.appendChild(li)
         }
-        list.innerHTML = x
+        list.innerHTML = x 
     }
 }

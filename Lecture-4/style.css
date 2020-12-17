@@ -1,0 +1,7 @@
+ul li:first-child .up{
+    visibility: hidden;
+}
+
+ul li:last-child .down{
+    visibility: hidden;
+}
