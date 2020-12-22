@@ -1,0 +1,11 @@
+.out::after{
+    content: '\2715';
+    position: absolute;
+    left: 250px;
+}
+
+.in::after{
+    content: '\2713';
+    position: absolute;
+    left: 250px;
+}
