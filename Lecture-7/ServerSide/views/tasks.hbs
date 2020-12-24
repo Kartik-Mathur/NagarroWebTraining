@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <script>
+        console.log("Hello world")
+    </script>
+</head>
+<body>
+    <h1>This is SSR rendering</h1>
+    <form method="POST" action="/todos">
+        <input type="text" name="name" placeholder="enter name">
+        <input type="number" name="age" placeholder="enter age">
+        <input type="number" name="marks" placeholder="enter marks">
+        <button type="submit">Submit</button>
+    </form>
+
+    <ul id="tasklist">
+        {{#each todos as |x|}}
+            <li>{{x.name}} {{x.age}} {{x.marks}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>
