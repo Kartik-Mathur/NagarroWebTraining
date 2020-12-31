@@ -3,19 +3,25 @@ const mongoose = require('mongoose')
 const UserSchema = mongoose.Schema({
     email:{
         type:String,
-        required:true,
+        // required:true,
         unique:true,
-        trim:true
+        // trim:true
     },
     name:{
         type:String,
         required:true,
-        unique:true,
-        trim:true
+        // unique:true,
+        // trim:true
     },
     password:{
         type:String,
-        required:true
+        // required:true
+    },
+    fbID:{
+        type:String
+    },
+    fbToken:{
+        type:String
     }
 })
 

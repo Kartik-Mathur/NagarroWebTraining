@@ -1,6 +1,7 @@
 const express = require('express')
 const route = express.Router()
 const User = require('../models/user')
+
 // Get '/logout
 route.get('/logout',(req,res,next)=>{
     req.session.destroy(function(err) {
